@@ -1,0 +1,67 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<header class="flex w-full h-[90px] bg-black px-10">
+			<div class=" text-6xl text-white font-semibold items-center justify-start block">
+				<h1 class="pt-2">KINSTA</h1>
+			</div>
+			<div class="flex items-center ml-[250px]">
+				<div class="flex text-white text-3xl">
+					<div class=" flex items-center bg-gray-800/50 py-1 px-3 rounded-lg space-x-2">
+						<Icon name="bi:building" size="25"/>
+						<span>BUILDINGS</span>
+						<Icon name="simple-line-icons:arrow-down" size="15"/>
+					</div>
+				</div>
+			</div>
+			<div class="flex items-center ml-[600px]">
+				<Icon name="iconoir:bell" size="40" color="white"/>
+				<div class="w-[14px] h-[14px] bg-red-500 rounded-full mb-8 -ml-1"></div>
+			</div>
+			<div class="flex items-center space-x-2 ml-[50px]">
+				<Icon name="stash:folder" size="50" color="white"/>
+				<span class="text-white text-2xl">Docs</span>
+			</div>
+			<div class="flex items-center space-x-2 ml-[50px]">
+				<span class="text-2xl text-white bg-purple-600 px-[14px] py-1 rounded-lg">K</span>
+				<span class="text-2xl text-white">Kinsta User</span>
+				<Icon name="simple-line-icons:arrow-down" size="15" color="white"/>
+			</div>
+		</header>
+		<div class="flex bg-slate-400/20 h-[800px]">
+			<div class="pl-10 pt-16 space-y-4">
+			    <div class="flex items-center space-x-2">
+					<Icon name="iconoir:server" />
+					<span class="text-2xl">Dashboard</span>
+				</div>
+				<div class="flex items-center space-x-2">
+					<Icon name="iconoir:server" />
+					<span class="text-2xl">Applications</span>
+				</div>
+				<div class="flex items-center space-x-2">
+					<Icon name="iconoir:server" />
+					<span class="text-2xl">WordPress Sites</span>
+				</div>
+				<div class="flex items-center space-x-2">
+					<Icon name="iconoir:server" />
+					<span class="text-2xl">DNS</span>
+				</div>
+			</div>
+			<div class="w-[1500px] h-[700px] border-2 border-red-500 rounded-lg mt-[40px] ml-[70px]">
+
+			</div>
+		</div>
+	</body>
+</html>
+
